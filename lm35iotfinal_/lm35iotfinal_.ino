@@ -1,3 +1,8 @@
+/*
+It is a temperature logger project using ESP01 and LM35 temperature sensor.
+Here we are using AT commands for programming ESP01.
+*/
+
 #include <stdlib.h>
 #include<SoftwareSerial.h>
 #include <LiquidCrystal.h>
@@ -56,8 +61,8 @@ void loop()
   {
     goto start; //go to label "start"
   }
- // delay(100000); //Update every 1 hour
- delay(2000);
+  
+ delay(2000); //Update every 2 seconds
 }
 
 void updateTemp()
